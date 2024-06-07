@@ -25,12 +25,12 @@ class _HomePageState extends State<HomePage> {
           maxWidth: size.width,
         ),
         decoration: const BoxDecoration(
-          color: Colors.black,
+          color: Colors.blueGrey,
           image: DecorationImage(
             image: AssetImage("assets/praying.jpg"),
             fit: BoxFit.cover,
             colorFilter: ColorFilter.mode(
-              Colors.black,
+              Colors.grey,
               BlendMode.color,
             ),
           ),
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
                   Text(
                     "Al-Qur'an",
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.blueGrey,
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
@@ -58,11 +58,11 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Material(
-                    color: Colors.black,
+                    color: Colors.blueGrey,
                     borderRadius: BorderRadius.circular(24.r),
                     child: InkWell(
                       borderRadius: BorderRadius.circular(24.r),
-                      splashColor: Colors.black.withAlpha(100),
+                      splashColor: Colors.blueGrey.withAlpha(100),
                       onTap: () => {
                         Navigator.push(
                           context,
@@ -148,8 +148,8 @@ class _HomePageState extends State<HomePage> {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withAlpha(0),
-                      Colors.black,
+                      Colors.blueGrey.withAlpha(0),
+                      Colors.blueGrey,
                     ],
                   ),
                 ),
